@@ -1,0 +1,280 @@
+
+insert into bigdatagroupproject.artfbdrmmdimension
+select row_number()over()+(cnt+1000) rownumber,
+d.* 
+from 
+(
+select
+'Artificial' CATEGORY, LEX ,
+LEX_D, 
+LEX_RCS,
+RCS, 
+RCS_X, 
+RCS_D, 
+RANK, 
+BED_EQ, 
+BED_EQ_D, 
+MB_EQ, 
+MB_EQ_D, 
+FM_EQ, 
+FM_EQ_D, 
+SUBGP_EQ, 
+SUBGP_EQ_D,
+GP_EQ, 
+GP_EQ_D, 
+SUPGP_EQ, 
+SUPGP_EQ_D, 
+MAX_TIME_D, 
+MIN_TIME_D, 
+MAX_TIME_Y, 
+MIN_TIME_Y, 
+MAX_INDEX, 
+MIN_INDEX, 
+MAX_AGE, 
+MIN_AGE, 
+MAX_EPOCH, 
+MIN_EPOCH, 
+MAX_PERIOD, 
+MIN_PERIOD, 
+MAX_ERA, 
+MIN_ERA, 
+MAX_EON, 
+MIN_EON, 
+PREV_NAME, 
+BGSTYPE, 
+LEX_RCS_I, 
+LEX_RCS_D, 
+BGSREF, 
+BGSREF_LEX, 
+BGSREF_FM,
+BGSREF_GP,
+BGSREF_RK,
+MSLINK,
+LEX_ROCK, 
+NOM_SCALE NOMSCALE,
+NOM_OS_YR NOMOSYEAR, 
+NOM_BGS_YR NOMBGSYR , 
+EASTING, 
+NORTHING, 
+LATITUDE,
+LONGITUDE
+from st_Artificial)d,
+(select count(*)+1 cnt 
+from bigdatagroupproject.artfbdrmmdimension)b;
+
+insert into bigdatagroupproject.artfbdrmmdimension
+select row_number()over()+(cnt+1000) rownumber,
+d.* 
+from 
+(
+select
+'BedRock' CATEGORY, LEX ,
+LEX_D, 
+LEX_RCS,
+RCS, 
+RCS_X, 
+RCS_D, 
+RANK, 
+BED_EQ, 
+BED_EQ_D, 
+MB_EQ, 
+MB_EQ_D, 
+FM_EQ, 
+FM_EQ_D, 
+SUBGP_EQ, 
+SUBGP_EQ_D,
+GP_EQ, 
+GP_EQ_D, 
+SUPGP_EQ, 
+SUPGP_EQ_D, 
+MAX_TIME_D, 
+MIN_TIME_D, 
+MAX_TIME_Y, 
+MIN_TIME_Y, 
+MAX_INDEX, 
+MIN_INDEX, 
+MAX_AGE, 
+MIN_AGE, 
+MAX_EPOCH, 
+MIN_EPOCH, 
+MAX_PERIOD, 
+MIN_PERIOD, 
+MAX_ERA, 
+MIN_ERA, 
+MAX_EON, 
+MIN_EON, 
+PREV_NAME, 
+BGSTYPE, 
+LEX_RCS_I, 
+LEX_RCS_D, 
+BGSREF, 
+BGSREF_LEX, 
+BGSREF_FM,
+BGSREF_GP,
+BGSREF_RK,
+MSLINK,
+LEX_ROCK, 
+NOMSCALE NOMSCALE,
+NOMOSYEAR, 
+NOMBGSYEAR , 
+EASTING, 
+NORTHING, 
+LATITUDE,
+LONGITUDE
+from st_BedRockDimension)d,
+(select count(*)+1 cnt 
+from bigdatagroupproject.artfbdrmmdimension)b;
+
+insert into bigdatagroupproject.artfbdrmmdimension
+select row_number()over()+(cnt+1000) rownumber,
+d.* 
+from 
+(
+select
+'MassMovement' CATEGORY, LEX ,
+LEX_D, 
+LEX_RCS,
+RCS, 
+RCS_X, 
+RCS_D, 
+RANK, 
+BED_EQ, 
+BED_EQ_D, 
+MB_EQ, 
+MB_EQ_D, 
+FM_EQ, 
+FM_EQ_D, 
+SUBGP_EQ, 
+SUBGP_EQ_D,
+GP_EQ, 
+GP_EQ_D, 
+SUPGP_EQ, 
+SUPGP_EQ_D, 
+MAX_TIME_D, 
+MIN_TIME_D, 
+MAX_TIME_Y, 
+MIN_TIME_Y, 
+MAX_INDEX, 
+MIN_INDEX, 
+MAX_AGE, 
+MIN_AGE, 
+MAX_EPOCH, 
+MIN_EPOCH, 
+MAX_PERIOD, 
+MIN_PERIOD, 
+MAX_ERA, 
+MIN_ERA, 
+MAX_EON, 
+MIN_EON, 
+PREV_NAME, 
+BGSTYPE, 
+LEX_RCS_I, 
+LEX_RCS_D, 
+BGSREF, 
+BGSREF_LEX, 
+BGSREF_FM,
+BGSREF_GP,
+BGSREF_RK,
+MSLINK,
+LEX_ROCK, 
+NOMSCALE NOMSCALE,
+NOMOSYEAR, 
+NOMBGSYEAR , 
+EASTING, 
+NORTHING, 
+LATITUDE,
+LONGITUDE
+from st_MassMovement)d,
+(select count(*)+1 cnt 
+from bigdatagroupproject.artfbdrmmdimension)b;
+
+
+insert into bigdatagroupproject.SuperFicialThickness
+select row_number()over()+(cnt+1000) rownumber,
+d.* 
+from 
+( select
+LEX,
+LEX_D,
+LEX_RCS, 
+RCS, 
+RCS_X, 
+RCS_D, 
+RANK, 
+MAX_TIME_D, 
+MIN_TIME_D, 
+MAX_TIME_Y, 
+MIN_TIME_Y, 
+MAX_INDEX, 
+MIN_INDEX, 
+MAX_AGE, 
+MIN_AGE, 
+MAX_EPOCH, 
+MIN_EPOCH, 
+MAX_PERIOD, 
+MIN_PERIOD, 
+MAX_ERA,
+MIN_ERA, 
+MAX_EON, 
+MIN_EON, 
+PREV_NAME,
+BGSTYPE, 
+LEX_RCS_I, 
+LEX_RCS_D, 
+BGSREF, 
+BGSREF_LEX, 
+BGSREF_FM, 
+BGSREF_GP, 
+BGSREF_RK, 
+MSLINK, 
+LEX_ROCK, 
+EASTING, 
+NORTHING, 
+LATITUDE,
+LONGITUDE
+from st_SuperFicialThickness)d,
+(select count(*)+1 cnt 
+from bigdatagroupproject.SuperFicialThickness)b;
+
+
+insert into bigdatagroupproject.faultslandformsdimension
+select row_number()over()+(cnt+1000) rownumber,
+d.* 
+from 
+( select
+CATEGORY,
+FEATURE,
+FEATUREDESC,
+NOMSCALE,
+NOMOSYEAR, 
+NOMBGSYEAR,
+ MSLINK, 
+ EASTING,     
+ NORTHING,
+Latitude,
+longitude
+from st_LandformsDimension)d,
+(select count(*)+1 cnt 
+from bigdatagroupproject.faultslandformsdimension)b;
+
+
+
+insert into bigdatagroupproject.faultslandformsdimension
+select row_number()over()+(cnt+1000) rownumber,
+d.* 
+from 
+( select
+CATEGORY,
+FEATURE,
+FEATUREDESC,
+NOMSCALE,
+NOMOSYEAR, 
+NOMBGSYEAR,
+ MSLINK, 
+ EASTING,     
+ NORTHING,
+Latitude,
+longitude
+from st_FaultsDimension)d,
+(select count(*)+1 cnt 
+from bigdatagroupproject.faultslandformsdimension)b;

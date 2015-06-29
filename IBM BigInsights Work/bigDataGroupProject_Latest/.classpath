@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="com.ibm.biginsights.project.BIGINSIGHTS_LIBS_CONTAINER/V3.0.0.0"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/opt/ibm/biginsights/database/db2/java/db2jcc.jar"/>
+	<classpathentry kind="lib" path="/opt/ibm/biginsights/database/db2/java/db2jcc_license_cu.jar"/>
+	<classpathentry kind="con" path="org.eclipse.datatools.connectivity.jdt.DRIVERLIBRARY/Hive JDBC Driver 0.12.0"/>
+	<classpathentry kind="lib" path="/home/biadmin/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="/home/biadmin/Desktop/testBIGDataFinal/commons-cli-2.0.jar"/>
+	<classpathentry kind="lib" path="/home/biadmin/BigDataGroupProject_FinalVersion/rowset.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
